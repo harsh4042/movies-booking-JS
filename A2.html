@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Flight-Scheduling Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        hr {
+            width: 50%;
+            border: none;
+            border-top: 2px solid #333;
+        }
+        .airline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+            margin-top: 30px;
+        }
+        .airline-item {
+            text-decoration: none;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .airline-logo {
+            height: 150px;
+            width: auto;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .movie-title {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+        .airline-item:hover .airline-logo {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: lightcyan;">Movie Booking System</h1>
+        <hr>
+        <h2 style="color: gold;">Movies List</h2>
+        <div class="airline-grid">
+            <a class="airline-item" href="A3.html">
+                <img class="airline-logo" src="jawan.jpg" alt="Air India">
+                <div class="movie-title">Jawan</div>
+            </a>
+            <a class="airline-item" href="A4.html">
+                <img class="airline-logo" src="rrr.jpg" alt="Spicejet">
+                <div class="movie-title">RRR</div>
+            </a>
+            <a class="airline-item" href="A5.html">
+                <img class="airline-logo" src="animal.jpg" alt="Vistara">
+                <div class="movie-title">Animal</div>
+            </a>
+            <a class="airline-item" href="A6.html">
+                <img class="airline-logo" src="avangres.png" alt="Indigo">
+                <div class="movie-title">End Game</div>
+            </a>
+            <a class="airline-item" href="A7.html">
+                <img class="airline-logo" src="openhammer.jpg" alt="Go air">
+                <div class="movie-title">Oppenheimer</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

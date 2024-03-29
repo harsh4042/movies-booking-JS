@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('olivia-anne-snyder-o-ADhD9o3Bg-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        hr {
+            border: 1px solid #999;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #ticket-details {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        #thank-you {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #print-button {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+<form name="form1">
+    <center>
+        <img src="rrr.jpg" alt="Spicejet Logo" style="display: block; margin: 20px auto; max-width: 200px;">
+        <h1>Movie Booking System</h1>
+        <hr>
+    </center>
+    <fieldset>
+        <legend>Customer Details</legend>
+        <label for="Fname">Customer Name:</label>
+        <input type="text" name="FN" id="Fname" placeholder="First Name Last Name" required>
+        <br><br>
+        <label for="seat">How many seats required:</label>
+        <input type="number" id="seat" name="seat" placeholder="Number of Seats" min="1" required>
+        <br><br>
+        <label for="Sposition">Seat Position:</label>
+        <select name="seat" id="Sposition" required>
+            <option disabled selected>Select Seat Position</option>
+            <option value="Front Seat">Front Seat</option>
+            <option value="Middle Seat">Middle Seat</option>
+            <option value="Last Seat">Last Seat</option>
+        </select>
+        <br><br>
+        <label for="time">Show Time:</label>
+        <select name="time" id="time" required>
+            <option disabled selected>Select Show Time</option>
+            <option value="10 AM to 12 PM">10 AM to 12 PM</option>
+            <option value="1 PM to 3 PM">1 PM to 3 PM</option>
+            <option value="3 PM to 5 PM">3 PM to 5 PM</option>
+            <option value="7 PM to 9 PM">7 PM to 9 PM</option>
+            <option value="10 PM to 12 AM">10 PM to 12 AM</option>
+        </select>
+    </fieldset>
+    <button type="button" onclick="Ticket()">Submit</button>
+
+    <div id="ticket-details" style="display: none;">
+        <h2>Ticket Details</h2>
+        <p id="demo">***** Ticket of Customer *****</p>
+        <p id="c"></p>
+        <p id="m">| *Movie Name: RRR</p>
+        <p id="b"></p>
+        <p id="t"></p>
+        <p id="sp"></p>
+        <p id="s"></p>
+        <p id="p"></p>
+    </div>
+
+    <p id="thank-you"></p>
+
+    <button type="button" id="print-button" onclick="window.print()">Print Ticket</button>
+</form>
+
+<script src="A4.js"></script>
+</body>
+</html>
